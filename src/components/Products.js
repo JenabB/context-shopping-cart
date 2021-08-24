@@ -7,7 +7,7 @@ const Products = () => {
   const { products } = useContext(GlobalContext);
 
   return (
-    <div className="mt-5 w-3/4 mx-auto">
+    <div className="mt-5 lg:w-3/4 mx-auto">
       <Filter />
       <div className="grid lg:grid-cols-3">
         {products.map((product) => (

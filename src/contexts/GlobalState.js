@@ -5,7 +5,7 @@ import products from "./products.json";
 const initialState = {
   products: products.products,
   cart: [],
-  currentItem: null,
+  product: null,
 };
 
 export const GlobalContext = createContext(initialState);
@@ -29,9 +29,9 @@ export const GlobalProvider = (props) => {
     });
   }
 
-  function loadCurrentItem(item) {
+  function getProductDetail(item) {
     dispatch({
-      type: "LOAD_CURRENT_ITEM",
+      type: "SHOW_PRODUCT_DETAIL",
       payload: item,
     });
   }
@@ -51,10 +51,10 @@ export const GlobalProvider = (props) => {
       value={{
         products: state.products,
         cart: state.cart,
-        currentItem: state.currentItem,
+        product: state.product,
         addToCart,
         removeFromCart,
-        loadCurrentItem,
+        getProductDetail,
         adjustQuantity,
       }}
     >

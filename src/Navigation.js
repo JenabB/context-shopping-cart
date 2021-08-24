@@ -10,10 +10,10 @@ import CartPage from "./pages/CartPage";
 import Home from "./pages/Home";
 
 import { GlobalContext } from "./contexts/GlobalState";
-import ProductDetail from "./components/ProductDetail";
+import ProductDetail from "./pages/ProductDetail";
 
 export default function Navigation() {
-  const { currentItem } = useContext(GlobalContext);
+  const { product } = useContext(GlobalContext);
   return (
     <Router>
       <div>
@@ -21,7 +21,7 @@ export default function Navigation() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/cart" component={CartPage} />
-          {!currentItem ? (
+          {!product ? (
             <Redirect to="/" />
           ) : (
             <Route path="/product/:id" component={ProductDetail} />

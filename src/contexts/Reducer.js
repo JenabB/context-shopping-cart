@@ -35,10 +35,10 @@ export default (state, action) => {
         ),
       };
 
-    case "LOAD_CURRENT_ITEM":
+    case "SHOW_PRODUCT_DETAIL":
       return {
         ...state,
-        currentItem: action.payload,
+        product: action.payload,
       };
 
     default:
