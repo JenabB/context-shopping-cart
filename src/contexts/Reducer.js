@@ -41,6 +41,19 @@ export default (state, action) => {
         product: action.payload,
       };
 
+    case "SEARCH_PRODUCT":
+      return {
+        ...state,
+        products:
+          action.payload.query !== ""
+            ? state.products.filter((item) =>
+                item.title
+                  .toLowerCase()
+                  .includes(action.payload.query.toLowerCase())
+              )
+            : state.initialProducts,
+      };
+
     default:
       return state;
   }

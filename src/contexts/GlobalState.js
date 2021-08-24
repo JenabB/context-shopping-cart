@@ -3,6 +3,7 @@ import Reducer from "./Reducer";
 import products from "./products.json";
 
 const initialState = {
+  initialProducts: products.products,
   products: products.products,
   cart: [],
   product: null,
@@ -46,6 +47,15 @@ export const GlobalProvider = (props) => {
     });
   }
 
+  function searchProduct(query) {
+    dispatch({
+      type: "SEARCH_PRODUCT",
+      payload: {
+        query: query,
+      },
+    });
+  }
+
   return (
     <GlobalContext.Provider
       value={{
@@ -56,6 +66,7 @@ export const GlobalProvider = (props) => {
         removeFromCart,
         getProductDetail,
         adjustQuantity,
+        searchProduct,
       }}
     >
       {props.children}
