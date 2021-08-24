@@ -30,12 +30,15 @@ const Product = ({ product }) => {
         </div>
       </Link>
 
-      <div className="p-4">
+      <div className="p-4 text-right">
         <button
           className="bg-blue-400 px-2 py-1 text-white rounded-lg"
           onClick={() => addToCart(product.id)}
         >
-          Add to cart
+          <div className="flex py-1">
+            <h1 className="mx-2">Add to Cart</h1>
+            <h1 class="material-icons md-24">add_shopping_cart</h1>
+          </div>
         </button>
       </div>
     </div>
