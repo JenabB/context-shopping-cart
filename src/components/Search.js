@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { GlobalContext } from "../contexts/GlobalState";
 
-const Filter = () => {
+const Search = () => {
   const [query, setQuery] = useState(null);
   const { searchProduct } = useContext(GlobalContext);
 
@@ -23,4 +23,4 @@ const Filter = () => {
   );
 };
 
-export default Filter;
+export default Search;

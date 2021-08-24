@@ -56,6 +56,16 @@ export const GlobalProvider = (props) => {
     });
   }
 
+  function orderByPrice(products, order) {
+    dispatch({
+      type: "ORDER_BY_PRICE",
+      payload: {
+        products: products,
+        order: order,
+      },
+    });
+  }
+
   return (
     <GlobalContext.Provider
       value={{
@@ -67,6 +77,7 @@ export const GlobalProvider = (props) => {
         getProductDetail,
         adjustQuantity,
         searchProduct,
+        orderByPrice,
       }}
     >
       {props.children}
