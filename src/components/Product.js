@@ -6,7 +6,7 @@ const Product = ({ product }) => {
   const { addToCart } = useContext(GlobalContext);
 
   return (
-    <div className="shadow-lg rounded p-2 m-2">
+    <div className="shadow-lg rounded-lg p-2 m-2">
       <img
         src={product.image}
         alt={product.title}
@@ -16,7 +16,7 @@ const Product = ({ product }) => {
         <div className="p-4">
           <p className="font-bold mb-2">{product.title}</p>
           <p className="line-clamp-2">{product.description}</p>
-          <p className="text-blue-400 font-bold inline-block px-3 mt-4">
+          <p className="text-blue-400 font-bold inline-block mt-4">
             {formatRp(product.price)}
           </p>
         </div>
@@ -25,7 +25,7 @@ const Product = ({ product }) => {
             className="bg-blue-400 px-2 py-1 text-white rounded-lg"
             onClick={() => addToCart(product.id)}
           >
-            Add to Cart
+            Add to cart
           </button>
         </div>
       </div>

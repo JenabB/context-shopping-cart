@@ -37,13 +37,13 @@ export const GlobalProvider = (props) => {
   }
 
   function adjustQuantity(itemId, value) {
-    return {
+    dispatch({
       type: "ADJUST_QUANTITY",
       payload: {
         id: itemId,
         quantity: value,
       },
-    };
+    });
   }
 
   return (
