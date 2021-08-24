@@ -7,8 +7,16 @@ const CartItem = ({ item }) => {
   const { removeFromCart, adjustQuantity } = useContext(GlobalContext);
 
   const handleChange = (e) => {
-    setInput(e.target.value);
-    adjustQuantity(item.id, e.target.value);
+    let val = parseInt(e.target.value, 10);
+
+    if (isNaN(val)) {
+      setInput("");
+      adjustQuantity(item.id, "");
+    } else {
+      val = val >= 0 ? val : 1;
+      setInput(val);
+      adjustQuantity(item.id, val);
+    }
   };
 
   return (
