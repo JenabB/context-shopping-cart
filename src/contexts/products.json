@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Absolute Justice",
+      "description": "The monster should be dead….",
+      "price": 98000,
+      "image": "https://cf.shopee.co.id/file/66c924ab99bb8828e202afab7c79c772"
+    },
+    {
+      "id": 2,
+      "title": "Holy Mother",
+      "description": "There is a gruesome murder of a boy in the town where Honami lives. The victim was even raped after being killed. The news made Honami worry about the safety of her only daughter. He couldn't even trust the police. What will he do to protect his only daughter?",
+      "price": 85500,
+      "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549509732l/43880065._SX318_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Girl in the Dark",
+      "description": "What did the girl want to say? The girl died. The head of the Literature Club, Shiraishi Itsumi, is dead. In his hand was a lily flower. Murder? Suicide? No one knows.",
+      "price": 75000,
+      "image": "https://cf.shopee.co.id/file/11c5eeded460a21cc640e2f462ba0967"
+    },
+    {
+      "id": 4,
+      "title": "Jujutsu Kaisen Vol. 8",
+      "description": "Yuji Itadori is resolved to save the world from cursed spirits, but he soon learns that the best way to do it is to slowly lose his humanity and become one himself!",
+      "price": 45000,
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSrD8ArFYYBlV-4Rr_R6cIWoZJqv9ovGIQGAYu9xBwUGjKVES0rBWN1ZS6lWeb5alVI0ckvnME-_x4UTHDCTMsMxH1zXviL&usqp=CAE"
+    }
+  ]
+}
